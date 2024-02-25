@@ -33,7 +33,7 @@ func counter(folder string) {
 	files1, err := ioutil.ReadDir(folder)
 	if err != nil {
 		defer calmDown()
-		panic("oh no")
+		panic("Cannot read a Dir")
 	}
 	var fileNames []string
 	for _, file := range files1 {
